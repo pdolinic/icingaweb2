@@ -26,6 +26,16 @@ class LoginForm extends Form
     /**
      * {@inheritdoc}
      */
+    public static $defaultElementDecorators = array(
+        array('ViewHelper', array('separator' => '')),
+        array('Help', array()),
+        array('Errors', array('separator' => '')),
+        array('HtmlTag', array('tag' => 'div', 'class' => 'control-group'))
+    );
+
+    /**
+     * {@inheritdoc}
+     */
     public function init()
     {
         $this->setRequiredCue(null);
@@ -46,7 +56,8 @@ class LoginForm extends Form
                 'autocapitalize'    => 'off',
                 'autocomplete'      => 'username',
                 'class'             => false === isset($formData['username']) ? 'autofocus' : '',
-                'label'             => $this->translate('Username'),
+                'placeholder'       => $this->translate('Username'),
+                'label'             => false,
                 'required'          => true
             )
         );
@@ -56,7 +67,7 @@ class LoginForm extends Form
             array(
                 'required'      => true,
                 'autocomplete'  => 'current-password',
-                'label'         => $this->translate('Password'),
+                'placeholder'   => $this->translate('Password'),
                 'class'         => isset($formData['username']) ? 'autofocus' : ''
             )
         );
