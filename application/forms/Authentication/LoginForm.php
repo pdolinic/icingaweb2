@@ -23,15 +23,12 @@ class LoginForm extends Form
      */
     const REDIRECT_URL = 'dashboard';
 
-    /**
-     * {@inheritdoc}
-     */
-    public static $defaultElementDecorators = array(
-        array('ViewHelper', array('separator' => '')),
-        array('Help', array()),
-        array('Errors', array('separator' => '')),
-        array('HtmlTag', array('tag' => 'div', 'class' => 'control-group'))
-    );
+    public static $defaultElementDecorators = [
+        ['ViewHelper', ['separator' => '']],
+        ['Help', []],
+        ['Errors', ['separator' => '']],
+        ['HtmlTag', ['tag' => 'div', 'class' => 'control-group']]
+    ];
 
     /**
      * {@inheritdoc}
@@ -57,7 +54,6 @@ class LoginForm extends Form
                 'autocomplete'      => 'username',
                 'class'             => false === isset($formData['username']) ? 'autofocus' : '',
                 'placeholder'       => $this->translate('Username'),
-                'label'             => false,
                 'required'          => true
             )
         );
