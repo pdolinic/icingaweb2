@@ -1,3 +1,6 @@
+-- SPDX-FileCopyrightText: 2022 Icinga GmbH <https://icinga.com>
+-- SPDX-License-Identifier: GPL-3.0-or-later
+
 ALTER TABLE `icingaweb_group` ROW_FORMAT=DYNAMIC;
 ALTER TABLE `icingaweb_group_membership` ROW_FORMAT=DYNAMIC;
 ALTER TABLE `icingaweb_user` ROW_FORMAT=DYNAMIC;

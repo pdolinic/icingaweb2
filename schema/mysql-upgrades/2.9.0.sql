@@ -1,3 +1,6 @@
+-- SPDX-FileCopyrightText: 2021 Icinga GmbH <https://icinga.com>
+-- SPDX-License-Identifier: GPL-3.0-or-later
+
 CREATE TABLE `icingaweb_rememberme`(
   id                int(10) unsigned NOT NULL AUTO_INCREMENT,
   username          varchar(254) COLLATE utf8mb4_unicode_ci NOT NULL,

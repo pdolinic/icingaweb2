@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2023 Icinga GmbH <https://icinga.com>
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 ;(function () {
     let html = document.documentElement;
     window.name = html.dataset.icingaWindowName;

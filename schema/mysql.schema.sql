@@ -1,4 +1,5 @@
-# Icinga Web 2 | (c) 2014 Icinga GmbH | GPLv2+
+-- SPDX-FileCopyrightText: 2018 Icinga GmbH <https://icinga.com>
+-- SPDX-License-Identifier: GPL-3.0-or-later
 
 CREATE TABLE `icingaweb_group`(
   `id`     int(10) unsigned NOT NULL AUTO_INCREMENT,

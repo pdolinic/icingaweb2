@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2023 Icinga GmbH <https://icinga.com>
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 ;(function () {
     /**
      * When JavaScript is available, trigger an XmlHTTPRequest with the non-existing user 'logout' and abort it

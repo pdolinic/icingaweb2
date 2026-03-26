@@ -1,5 +1,7 @@
 <?php
-/* Icinga Web 2 | (c) 2022 Icinga Development Team | GPLv2+ */
+
+// SPDX-FileCopyrightText: 2022 Icinga GmbH <https://icinga.com>
+// SPDX-License-Identifier: GPL-3.0-or-later
 
 namespace Tests\Icinga\File\Storage;
 

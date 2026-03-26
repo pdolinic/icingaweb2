@@ -1,3 +1,6 @@
+-- SPDX-FileCopyrightText: 2023 Icinga GmbH <https://icinga.com>
+-- SPDX-License-Identifier: GPL-3.0-or-later
+
 ALTER TABLE icingaweb_schema
   MODIFY COLUMN timestamp bigint unsigned NOT NULL,
   MODIFY COLUMN version varchar(64) NOT NULL,
