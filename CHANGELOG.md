@@ -4,6 +4,69 @@ Please make sure to always read our [Upgrading](doc/80-Upgrading.md) documentati
 
 ## What's New
 
+### What's New in Version 2.13.0
+
+You can find all issues related to this release on our
+[Roadmap](https://github.com/Icinga/icingaweb2/milestone/82?closed=1).
+
+#### Monitoring Module Moves On
+
+The monitoring module has been moved out of the Icinga Web core repository
+and is now maintained separately at
+[icinga/icingaweb2-module-monitoring](https://github.com/Icinga/icingaweb2-module-monitoring).
+It enters maintenance mode and will only receive security fixes going forward.
+The recommended successor is [Icinga DB Web](https://github.com/Icinga/icingaweb2-module-icingadb).
+
+For package-based installations, the monitoring module is not removed
+outright: it is shipped as a separate package `icingaweb2-module-monitoring`,
+which the `icingaweb2` package depends on, so existing installations will
+continue to work after an upgrade without manual intervention.
+
+* Remove monitoring module [#5458](https://github.com/Icinga/icingaweb2/pull/5458)
+
+#### PHP 8.2 Required, PHP 8.5 Supported
+
+Icinga Web now requires PHP 8.2 or newer. PHP 8.5 is fully supported as
+well, so you can run the very latest PHP without any concerns.
+
+* Require PHP 8.2 [#5444](https://github.com/Icinga/icingaweb2/pull/5444)
+* Support PHP 8.5 [#5454](https://github.com/Icinga/icingaweb2/pull/5454)
+
+#### Navigation Polish
+
+The sidebar navigation has been improved in a couple of ways. Level-2 flyout
+menus now display their title when the sidebar is collapsed, so you always
+know which section you navigated into. The flyout animation has also been
+smoothed out for a more polished feel.
+
+* Show title in level-2 flyouts [#5360](https://github.com/Icinga/icingaweb2/pull/5360)
+* Improve flyout transition [#5367](https://github.com/Icinga/icingaweb2/pull/5367)
+
+#### UI Improvements
+
+Several small visual inconsistencies have been addressed. Disabled textareas
+now match the look of other disabled input fields. The Tactical Overview
+donut label gets a subtle opacity effect on hover. Input elements have a
+consistent fixed height across browsers. And a Safari-specific issue that
+generated a wrong tooltip for the user menu item in collapsed sidebar mode
+has been resolved.
+
+* Add disabled style to textareas [#5476](https://github.com/Icinga/icingaweb2/pull/5476)
+* Tactical Overview: Add opacity on hover [#5400](https://github.com/Icinga/icingaweb2/pull/5400)
+* Apply fixed height to input elements [#5401](https://github.com/Icinga/icingaweb2/pull/5401)
+* Improve title and label of user menu item in collapsed mode [#5412](https://github.com/Icinga/icingaweb2/pull/5412)
+* Normalize "Confirm Removal" and cancel icon usage [#5429](https://github.com/Icinga/icingaweb2/pull/5429)
+
+#### Fixes
+
+The browser's timezone information was silently lost in certain situations,
+causing time-sensitive displays to show incorrect times. This is now fixed.
+User roles are also logged during login in the debug log, making it easier
+to trace permission and access issues.
+
+* Fix browser timezone information being lost [#5357](https://github.com/Icinga/icingaweb2/pull/5357)
+* Log user roles [#5311](https://github.com/Icinga/icingaweb2/pull/5311)
+
 ### What's New in Version 2.12.6
 
 You can find all issues related to this release on our [Roadmap](https://github.com/Icinga/icingaweb2/milestone/86?closed=1).
