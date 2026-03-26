@@ -24,8 +24,8 @@ Icinga Core and any other monitoring backend compatible with the IDO database.
 ## License
 
 Icinga Web 2 and the Icinga Web 2 documentation are licensed under the terms of the GNU
-General Public License Version 2, you will find a copy of this license in the
-COPYING file included in the source package.
+General Public License Version 3. You will find a copy of this license in [LICENSE.md](LICENSE.md)
+included in the source package.
 
 ## Installation
 
