@@ -40,7 +40,7 @@ thoroughly.
 
 ### Optional Requirements
 
-* The [pdfexport](https://github.com/Icinga/icingaweb2-module-pdfexport) module (≥0.10) is required for the
+* The [pdfexport](https://github.com/Icinga/icingaweb2-module-pdfexport) module (≥0.13.0) is required for the
   export to PDF
 * LDAP PHP library when using Active Directory or LDAP for authentication
 
@@ -399,10 +399,10 @@ You will need to install certain dependencies depending on your setup:
   monitor your infrastructure
 * A web server, e.g. Apache or Nginx
 * PHP version ≥ 8.2
-* [Icinga PHP Library (ipl)](https://github.com/Icinga/icinga-php-library) (≥ 0.19.0)
-* [Icinga PHP Thirdparty](https://github.com/Icinga/icinga-php-thirdparty) (≥ 0.12)
+* [Icinga PHP Library (ipl)](https://github.com/Icinga/icinga-php-library) ≥ 0.19.0
+* [Icinga PHP Thirdparty](https://github.com/Icinga/icinga-php-thirdparty) ≥ 0.15.0
 * The following PHP modules must be installed: cURL, json, gettext, fileinfo, intl, dom, OpenSSL and xml
-* The [pdfexport](https://github.com/Icinga/icingaweb2-module-pdfexport) module (≥0.10) is required for the
+* The [pdfexport](https://github.com/Icinga/icingaweb2-module-pdfexport) module (≥0.13.0) is required for the
   export to PDF
 * LDAP PHP library when using Active Directory or LDAP for authentication
 * MariaDB/MySQL or PostgreSQL PHP libraries
