@@ -5,6 +5,16 @@ v2.6 to v2.8 requires to follow the instructions for v2.7 too.
 
 ## Upgrading to Icinga Web 2.13
 
+**Deprecations**
+
+The monitoring module has been moved out of the Icinga Web core repository and is now maintained separately at
+[icinga/icingaweb2-module-monitoring](https://github.com/Icinga/icingaweb2-module-monitoring). It enters maintenance mode and will only receive security fixes going
+forward. The recommended successor is [Icinga DB Web](https://github.com/Icinga/icingaweb2-module-icingadb).
+
+For package-based installations, the monitoring module is not removed outright: it is shipped as a separate package
+`icingaweb2-module-monitoring`, which the `icingaweb2` package depends on, so existing installations will continue
+to work after an upgrade without manual intervention.
+
 **Breaking changes**
 
 * The following columns of the `Servicestatus` table, which previously displayed the date time (string) as a fetched
